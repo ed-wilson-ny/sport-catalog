@@ -33,6 +33,7 @@ git clone https://github.com/edwilsonny/sport-catalog.git
 ```
 To start server:
 ```
+cd/sport-catalog
 ./project.py
 ```
 
