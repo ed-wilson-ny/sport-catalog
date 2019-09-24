@@ -29,7 +29,7 @@ The user also has the ability to authenticate through google. Once the user is a
 
 To clone software:
 ```
-git clone 
+git clone https://github.com/edwilsonny/sport-catalog.git
 ```
 To start server:
 ```
