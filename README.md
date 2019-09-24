@@ -18,6 +18,13 @@ The user also has the ability to authenticate through google. Once the user is a
 
 ## Prerequisites
 
+* A linux server
+* Python 2.7
+* Flask
+* SQLAlchemy
+* SQLite DB
+
+
 ## Installation
 
 ## Instructions
