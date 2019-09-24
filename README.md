@@ -39,5 +39,7 @@ cd/sport-catalog
 
 ## Instructions
 
+Launch a web browser and type: http://localhost:8080
+
 
 [(Back to TOC)](#table-of-contents)
