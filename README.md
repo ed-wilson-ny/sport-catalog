@@ -41,5 +41,7 @@ cd/sport-catalog
 
 Launch a web browser and type: http://localhost:8080
 
+For JSON Data type: http://localhost:8080/item/JSON/
+
 
 [(Back to TOC)](#table-of-contents)
