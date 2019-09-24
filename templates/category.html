@@ -1,0 +1,83 @@
+{% extends "main.html" %}
+{% block content %}
+{% include "header.html" %}
+
+	<div class="row divider blue">
+		<div class="col-md-12"></div>
+	</div>
+	<div class="row banner main">
+		<div class="col-md-1"></div>
+		<div class="col-md-11 padding-none">
+		</div>
+	</div>
+	<div class="row divider blue">
+		<div class="col-md-12"></div>
+	</div>
+
+	<div class = 'flash'>
+		      {% with messages = get_flashed_messages() %}
+      {% if messages %}       
+        <ul>
+        {% for message in messages %}
+            <li> <strong> {{ message }} </strong> </li>
+        {% endfor %}
+        </ul>
+        {% endif %}
+    {% endwith %}
+  </div>
+
+<br> 
+<table align="center" style="width:80%"  border = "3" cellspacing="2" bordercolor="gray" >
+	<tr height="400" bgcolor="lightgray">	
+		<td width="25%" valign="top">
+			<div align="center" style="margin-left:10px";> 
+          	{% if splash_scrn == '1' %}
+					      Categories  								 	 					 
+		        {% else %}
+			          Categories  
+			      {% endif %}	
+	    
+	      
+	         {% for category in categories %}
+	 
+		        <a href = "{{url_for('showCategoryItem', category_id = category.id)}}">
+			
+						<h4>{{category.name}}</h4>
+				
+		        </a>
+	
+		        {% endfor %}
+		
+		    </div>
+		
+	</td>
+	
+		<td width="75%" valign="top">
+	  
+	<div align="left" 
+		      
+		      <div style="margin-left:10px";> 
+            {% if splash_scrn == '1' %}
+					    Most Recently Added {{itemcnt}} Items 									 	 					 
+		        {% else %}
+			        {{cat_name}}  {{itemcnt}} Items  
+			      {% endif %}	
+	 <a href = "/item/new">Add Item</a>
+	{% for item in items %}
+	    <a href = "{{url_for('showItem', item_id = item.id)}}">
+			      
+						{% if splash_scrn == '1' %}
+					    <h4> {{item.name}} ({{item.category.name}}) </h4>									 	 					 
+		        {% else %}
+			        <h4> {{item.name}} </h4>
+			      {% endif %}
+			
+		</a>
+		{% endfor %}
+	</div>
+	</td>
+</tr>
+
+	
+	
+{% endblock %}

@@ -1,0 +1,15 @@
+{% block content %}
+    <h2>Chooser<h2>
+        <h3><table><form action="" method="POST">
+          <td>
+          <label>Select :</label>
+            <select name="option" width="300px">
+              {% for o in option_list %}
+                <option value="{{ o.name }}">{{ o.name }}</option>
+              {% endfor %}
+              </select>
+           </td>
+        </form></table><h3>
+
+  </div>
+{% endblock content %}

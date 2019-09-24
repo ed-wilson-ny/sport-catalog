@@ -1,0 +1,66 @@
+{% extends "main.html" %}
+{% block content %}
+{% include "header.html" %}
+	
+	<div class="row divider green">
+		<div class="col-md-12"></div>
+	</div>
+	<div class="row banner menu">
+		<div class="col-md-11 col-md-offset-1 padding-none">
+			<h1>{{ items.category.name }} => {{ items.name }}
+			<figure class="creator">
+				<img src="{{ creator.picture}}">
+				<figcaption>{{ creator.name }}</figcaption>
+			</figure>
+			</h1>
+		</div>
+	</div>
+	<div class="row divider blue"> 
+		<div class="col-md-12"></div>
+	 </div>
+	  
+	<div class = 'flash'>
+		      {% with messages = get_flashed_messages() %}
+      {% if messages %}       
+        <ul>
+        {% for message in messages %}
+            <li> <strong> {{ message }} </strong> </li>
+        {% endfor %}
+        </ul>
+        {% endif %}
+    {% endwith %}
+  </div>
+ <br>
+		<table align="center" style="width:50%"  border = "0" cellspacing="2" bordercolor="gray" >
+	
+	
+		   <tr height="100" bgcolor="lightgray">	
+		
+	
+		<td width="75%" valign="top">
+	
+	
+	<div align="left" valign="top" style="margin-left:10px";> 
+        
+	
+
+	 
+		
+		{{items.description}}								 	 					 
+		       	
+	
+	 
+	</div>
+	
+	</td>
+	</tr>
+	<tr>
+		<td>
+			<a href = "{{url_for('editItem' , item_id=items.id)}}" >Edit Item</a> | <a href = "{{url_for('deleteItem' , item_id=items.id)}}" >Delete Item</a>
+		</td>
+	</tr>
+	 
+
+	
+	
+{% endblock %}
