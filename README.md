@@ -28,13 +28,13 @@ The user also has the ability to authenticate through google. Once the user is a
 ## Installation
 
 To clone software:
-'''
+```
 git clone 
-'''
+```
 To start server:
-'''
+```
 ./project.py
-'''
+```
 
 ## Instructions
 
