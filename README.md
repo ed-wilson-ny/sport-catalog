@@ -16,27 +16,9 @@ We're using tools called [Vagrant](https://www.vagrantup.com/) and [VirtualBox](
 
 ## Prerequisites
 
-
 ## Installation
 
-
-
 ## Instructions
-
-### Start the virtual machine
-
-From your terminal, inside the **vagrant** subdirectory, run the command `vagrant up`. This will cause Vagrant to download the Linux operating system and install it. This may take quite a while (many minutes) depending on how fast your Internet connection is.
-
-![vagrant-up-start](https://d17h27t6h515a5.cloudfront.net/topher/2016/December/58488603_screen-shot-2016-12-07-at-13.57.50/screen-shot-2016-12-07-at-13.57.50.png)
-
-_Starting the Ubuntu Linux installation with `vagrant up`._
-_This screenshot shows just the beginning of many, many pages of output in a lot of colors._
-
-When `vagrant up` is finished running, you will get your shell prompt back. At this point, you can run `vagrant ssh` to log in to your newly installed Linux VM!
-
-![linux-vm-login](https://d17h27t6h515a5.cloudfront.net/topher/2016/December/58488962_screen-shot-2016-12-07-at-14.12.29/screen-shot-2016-12-07-at-14.12.29.png)
-
-_Logging into the Linux VM with `vagrant ssh`._
 
 
 [(Back to TOC)](#table-of-contents)
