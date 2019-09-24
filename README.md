@@ -1,4 +1,4 @@
-# Full Stack Web Developer Nanodegree program virtual machine
+# sport-catalog
 
 ## Table of Contents
 
@@ -10,9 +10,11 @@
 
 ## Intro
 
-In the next part of this course, you'll use a virtual machine (VM) to run an SQL database server and a web app that uses it. The VM is a Linux server system that runs on top of your own computer. You can share files easily between your computer and the VM; and you'll be running a web service inside the VM which you'll be able to access from your regular browser.
+This application runs a small website for a Sporting Goods store. It has the functionallity to Display, Add, Update and Delete sporting good products that belong to specific categories. 
 
-We're using tools called [Vagrant](https://www.vagrantup.com/) and [VirtualBox](https://www.virtualbox.org/wiki/Download_Old_Builds_5_1) to install and manage the VM. You'll need to install these to do some of the exercises. The instructions on this page will help you do this.
+The initial page shows each category along with the three most recently modified items and gives the user the ability to select either the category or the displayed item. If the category is displayed, the items that belong to that category is displayed. If an item is selected, detail about that item is displayed.
+
+The user also has the ability to authenticate through google. Once the user is authenticated using googe, he/she has the ability to add an item to the database. Once an authenticated user adds an item, he/she is authorized to edit or delete that item. The authenticated user only has the authorization to edit/delete items that they have added.
 
 ## Prerequisites
 
