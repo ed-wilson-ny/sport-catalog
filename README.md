@@ -45,4 +45,7 @@ For a JSON listing of all item data - type: http://localhost:8080/item/JSON/
 
 
 [(Back to TOC)](#table-of-contents)
+<<<<<<< HEAD
 
+=======
+>>>>>>> 301605f0ab8fbe4181f3cc89c18a0bcc2ccadb0d
