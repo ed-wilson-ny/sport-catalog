@@ -71,7 +71,8 @@ Launch a web browser and type: http://localhost:8080
 
 For a JSON listing of all item data - type: http://localhost:8080/item/JSON/
 
-For a JSON listing of a given Item  - type: http://localhost:8080/item/JSON/*item_id*/
+For a JSON listing of a given Item  - type: http://localhost:8080/item/JSON/ *item_id* /
+     
      Where: *item_id* is the item_id of the product.
 
 
